@@ -1,0 +1,21 @@
+; Lab 5 Garbage Collection Test (VM-level)
+
+PUSH 10
+PUSH 20
+NEW_PAIR
+STORE 0
+
+PUSH 30
+PUSH 40
+NEW_PAIR
+STORE 1
+
+GC            ; nothing collected
+
+LOAD 0
+LOAD 1
+NEW_PAIR
+
+GC            ; still nothing collected
+
+HALT

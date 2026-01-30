@@ -1,0 +1,17 @@
+var a;
+var b;
+var c;
+
+a = (10, 20);
+b = (30, 40);
+
+/* At this point:
+   a -> pair(10,20)
+   b -> pair(30,40)
+*/
+
+c = (a, b);
+
+/* a, b, c are all reachable */
+
+c;

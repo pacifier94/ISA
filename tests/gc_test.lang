@@ -1,0 +1,5 @@
+// This should create 3 objects on the heap
+var x = pair(1, 2);
+var y = pair(x, 3);
+var z = pair(y, y);
+z;
