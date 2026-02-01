@@ -1,13 +1,10 @@
-%code requires {
-    #include <string>
-    class ASTNode;
-    class StatementListNode;
-}
-
 %{
-#include "ast.h"
+#include <cstdio>
+#include <cstdlib>
 #include <map>
 #include <iostream>
+#include <string>
+#include "ast.h"
 
 extern int yylex();
 extern int line_num;
