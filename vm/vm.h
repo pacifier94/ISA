@@ -15,7 +15,9 @@ public:
     // GC hooks
     void gc_collect();
     size_t heap_size() const;
-
+    // Debug support
+    bool finished() const;
+    size_t getPC() const;
 private:
     std::vector<IRInst> code;
     std::vector<int32_t> stack;
