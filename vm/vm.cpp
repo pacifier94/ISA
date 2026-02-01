@@ -72,3 +72,10 @@ void VM::gc_collect() {
 size_t VM::heap_size() const {
     return gc.count();
 }
+bool VM::finished() const {
+    return pc >= code.size();
+}
+
+size_t VM::getPC() const {
+    return pc;
+}
